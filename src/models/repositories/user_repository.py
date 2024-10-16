@@ -31,7 +31,7 @@ class UserRepository(UserRepositoryInterface):
         cursor = self.__conn.cursor()
         cursor.execute(
             '''
-            SELECT id, username, password
+            SELECT id, username, password, balance
             FROM users,
             WHERE username = ?
             ''', (username,)
