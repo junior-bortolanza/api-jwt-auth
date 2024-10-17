@@ -8,7 +8,7 @@ class HttpRequest:
             ) -> None:
         self.body = body
         self.headers = headers
-        self.param = params
+        self.params = params
         self.tokens_info = tokens_infos
 
 http_request = HttpRequest(body={"Olã": "MUndo"})
