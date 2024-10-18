@@ -51,6 +51,7 @@ def test_edit_balance():
 
 def test_get_user_by_username():
     username = "meuUsername"
+    
 
     mock_connection = MockConnection()
     repo = UserRepository(mock_connection)
